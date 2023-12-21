@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="bmi_calculate.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/" aria-current="page">Home</a>
+      <a href="/page2.html">Other page</a>
+    </nav>
+    <main>
+      <div class="container">
+        <h1>BMI Calculator</h1>
+        <form action="">
+          <p>
+            <label>Height in CM</label>
+            <input type="text" id="height" placeholder="Your height" />
+          </p>
+
+          <p>
+            <label>Weight in KG</label>
+            <input type="text" id="weight" placeholder="Your weight" />
+          </p>
+          <button>Calculate</button>
+          <div id="output">
+            <div id="results"></div>
+            <div id="guide"></div>
+          </div>
+          <div id="weight-guide">
+            <h3>BMI Weight Guide</h3>
+            <p>Under Weight = Less than 18.6</p>
+            <p>Normal Weight = 18.6 and 24.9</p>
+            <p>Overweight = Greater than 24.9</p>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
